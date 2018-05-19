@@ -1,0 +1,16 @@
+.piper{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+}
+
+.piper--name{
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.piper--role{
+  font-style: italic;
+}
+

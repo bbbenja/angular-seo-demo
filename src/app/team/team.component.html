@@ -1,0 +1,12 @@
+<h2>
+  The Team
+</h2>
+<h3>
+  Meet the pipers
+</h3>
+
+<ul>
+  <li *ngFor="let piper of team">
+    <pp-team-summary [piper]="piper" [routerLink]="['/team', piper.id]"></pp-team-summary>
+  </li>
+</ul>

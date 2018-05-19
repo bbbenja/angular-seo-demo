@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "seo",
+      "prefix": "pp",
       "schematics": {
         "@schematics/angular:class": {
           "spec": false

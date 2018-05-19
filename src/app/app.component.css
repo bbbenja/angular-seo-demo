@@ -1,0 +1,14 @@
+menu{
+  background: #3d9e77;
+  padding: 2rem;
+}
+
+menu a, menu a:link, menu a:visited, menu a:hover {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+menu a:hover{
+  background: #317e6f;
+}
