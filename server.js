@@ -1,6 +1,7 @@
 const express = require('express');
 const rendertron = require('rendertron-middleware');
-const crawlers = require('crawler-user-agents');
+var fs = require('fs');
+const crawlers = fs.readFileSync('crawler-user-agents.json');
 
 const app = express();
 
@@ -9,12 +10,12 @@ function getCrawlersPattern() {
 }
 
 app.use(rendertron.makeMiddleware({
-  proxyUrl: 'https://render-tron.appspot.com/render',
+  proxyUrl: 'http://localhost:8080/render',
   userAgentPattern: getCrawlersPattern()
 }));
 
 app.use(express.static(__dirname + '/dist/demo-seo'));
-app.listen(8080);
+app.listen(8081);
 
 app.get('*', function(req, res){
   res.sendFile(__dirname + '/dist/demo-seo/index.html');

@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+    piedpiper:
+        build: .
+        image: angular-seo-web
+        container_name: angular-seo-web
+        labels:
+            - "traefik.enable=true"
+            - "traefik.bakend=piedpier"
+            - "traefik.frontend.rule=Host:piedpiper.bc.c-t.io"
+            - "traefik.port=8081"
+        restart: always
+
+    rendertron:
+        image: yamitzky/rendertron
+        container_name: angular-seo-rendertron
+        restart: always
+        security_opt:
+            - seccomp:"./chrome.json"
