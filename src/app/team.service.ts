@@ -19,7 +19,7 @@ export class TeamService {
       role: 'Chief Operating Officer',
       photo: 'http://www.piedpiper.com/app/themes/pied-piper/dist/images/photo-jared.png'
     },
-    'monicas': {
+    'monica': {
       id: 'monica',
       name: 'Monica Hall',
       role: 'Chief Financial Officer',
