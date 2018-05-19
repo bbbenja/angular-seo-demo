@@ -48,8 +48,8 @@ export class TeamService {
   constructor() {
   }
 
-  getTeam(): Piper[] {
-    return Object.values(this.pipers);
+  getTeam(page: number, nbRows = 2): Piper[] {
+    return Object.values(this.pipers).slice((page - 1) * nbRows, page * nbRows);
   }
 
   getPiper(id: string): Piper {

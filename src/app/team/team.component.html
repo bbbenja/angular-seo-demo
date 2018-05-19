@@ -10,3 +10,8 @@
     <pp-team-summary [piper]="piper" [routerLink]="['/team', piper.id]"></pp-team-summary>
   </li>
 </ul>
+
+<div class="pipers--pagination">
+  <a *ngIf="page > 1" [routerLink]="['/team']" [queryParams]="{page:(page-1)}">Previous</a>
+  <a *ngIf="page < 3" [routerLink]="['/team']" [queryParams]="{page:(page+1)}">Next</a>
+</div>
