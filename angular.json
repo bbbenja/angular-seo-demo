@@ -42,7 +42,8 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+	      "src/google1dbef6dede4b34f9.html"
             ],
             "styles": [
               "src/styles.css"
