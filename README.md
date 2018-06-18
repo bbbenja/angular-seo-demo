@@ -36,3 +36,7 @@ https://github.com/jessfraz/dotfiles/blob/master/etc/docker/seccomp/chrome.json
 == Rendertron middleware
 
 == User agents
+
+== Robots.txt
+
+== Sitemaps.xml

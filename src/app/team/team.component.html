@@ -7,7 +7,9 @@
 
 <ul>
   <li *ngFor="let piper of team">
-    <pp-team-summary [piper]="piper" [routerLink]="['/team', piper.id]"></pp-team-summary>
+    <a [routerLink]="['/team', piper.id]">
+      <pp-team-summary [piper]="piper"></pp-team-summary>
+    </a>
   </li>
 </ul>
 
